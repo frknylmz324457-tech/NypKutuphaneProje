@@ -34,9 +34,8 @@ Yöneticiler ve Üyeler için ayrıştırılmış özel arayüzleri ile modern v
 Bu proje **Katmanlı Mimari (Layered Architecture)** prensiplerine sadık kalınarak geliştirilmiştir.
 
 * **Dil:** C#
-* **Platform:** Windows Forms (.NET Framework / .NET 6+)
+* **Platform:** Windows Forms (.NET Framework / .NET 8)
 * **Veritabanı:** MySQL
-* **Veri Erişimi:** ADO.NET (Özelleştirilmiş `DbHelper` sınıfı ile)
 
 ### 📐 Mimari Yapı
 * **DAL (Data Access Layer):** Veritabanı bağlantıları ve CRUD işlemleri burada yönetilir (`DbHelper`).
