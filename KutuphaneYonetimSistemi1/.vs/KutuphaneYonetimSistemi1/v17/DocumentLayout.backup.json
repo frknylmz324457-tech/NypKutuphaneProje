@@ -1,0 +1,511 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\userdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\userdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\talepform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\talepform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\kutuphaneyonetimsistemi1\\borrowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\borrowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\userdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\userdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\talepform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\talepform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\borrowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\borrowform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\kutuphaneyonetimsistemi1\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\kutuphaneyonetimsistemi1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\userdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\userdashboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\reportform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\reportform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\reportform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\bll\\reportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\bll\\reportmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\bll\\borrowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\bll\\borrowmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\bll\\bookmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\bll\\bookmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\entities\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\bll\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\bll\\usermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\dal\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\dal\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\kutuphaneyonetimsistemi1\\bookform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\bookform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\entities\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\bookform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\bookform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\bll\\membermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\bll\\membermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|c:\\users\\frkny\\onedrive\\masa\u00FCst\u00FC\\nesne y\u00F6nelim programlama dersi\\kutuphaneyonetimsistemi1\\kutuphaneyonetimsistemi1\\entities\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CA3933C-4EB1-4BAA-94B7-C37FC84E0448}|KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj|solutionrelative:kutuphaneyonetimsistemi1\\entities\\borrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BorrowForm.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BorrowForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BorrowForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BorrowForm.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BorrowForm.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAjwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T17:32:45.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\LoginForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\LoginForm.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\LoginForm.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwCgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T21:09:08.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\MainForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\MainForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\MainForm.cs [Design]",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T14:28:32.008Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\MainForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\MainForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\MainForm.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\MainForm.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAlwEkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T22:35:56.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\UserDashboard.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\UserDashboard.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\UserDashboard.cs [Design]",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\UserDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T14:51:46.647Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TalepForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\TalepForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\TalepForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\TalepForm.cs [Design]",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\TalepForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T18:19:33.287Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\UserDashboard.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\UserDashboard.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\UserDashboard.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\UserDashboard.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAkwDQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T14:45:17.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BorrowForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BorrowForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BorrowForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BorrowForm.cs [Design]",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BorrowForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T17:26:59.469Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TalepForm.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\TalepForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\TalepForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\TalepForm.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\TalepForm.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA3wEAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T17:57:46.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\LoginForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\LoginForm.cs [Design]",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T22:09:06.755Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MemberForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\MemberForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\MemberForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\MemberForm.cs [Design]",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\MemberForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T18:05:00.55Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MemberForm.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\MemberForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\MemberForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\MemberForm.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\MemberForm.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T13:23:30.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReportManager.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\ReportManager.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BLL\\ReportManager.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\ReportManager.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BLL\\ReportManager.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAiwDIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T13:07:50.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Program.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\Program.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Program.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-14T18:48:45.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserDashboard.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\UserDashboard.Designer.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\UserDashboard.Designer.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\UserDashboard.Designer.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\UserDashboard.Designer.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAlwEgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T14:51:36.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ReportForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\ReportForm.Designer.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\ReportForm.Designer.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\ReportForm.Designer.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\ReportForm.Designer.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwDMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T13:19:15.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BorrowManager.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\BorrowManager.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BLL\\BorrowManager.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\BorrowManager.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BLL\\BorrowManager.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAcwE0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-08T17:24:29.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ReportForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\ReportForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\ReportForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\ReportForm.cs [Design]",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\ReportForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-15T13:19:55.262Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ReportForm.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\ReportForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\ReportForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\ReportForm.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\ReportForm.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T16:15:56.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MemberManager.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\MemberManager.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BLL\\MemberManager.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\MemberManager.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BLL\\MemberManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T12:55:43.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "KutuphaneYonetimSistemi1",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-01-05T23:08:11.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BookManager.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\BookManager.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BLL\\BookManager.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\BookManager.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BLL\\BookManager.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAcwCoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T13:05:43.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BookForm.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BookForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BookForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BookForm.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BookForm.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwIYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T22:28:56.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BookForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BookForm.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BookForm.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BookForm.cs [Design]",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BookForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T22:27:11.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserManager.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\UserManager.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\BLL\\UserManager.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\BLL\\UserManager.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\BLL\\UserManager.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAWwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T22:11:47.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Borrow.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Entities\\Borrow.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\Entities\\Borrow.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Entities\\Borrow.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\Entities\\Borrow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T21:22:11.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Entities\\Member.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\Entities\\Member.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Entities\\Member.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\Entities\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T21:21:55.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Entities\\Book.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\Entities\\Book.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Entities\\Book.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\Entities\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T21:21:37.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\Entities\\User.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T21:21:22.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DbHelper.cs",
+              "DocumentMoniker": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\DAL\\DbHelper.cs",
+              "RelativeDocumentMoniker": "KutuphaneYonetimSistemi1\\DAL\\DbHelper.cs",
+              "ToolTip": "C:\\Users\\frkny\\OneDrive\\Masa\u00FCst\u00FC\\Nesne Y\u00F6nelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\DAL\\DbHelper.cs",
+              "RelativeToolTip": "KutuphaneYonetimSistemi1\\DAL\\DbHelper.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T15:28:34.121Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
