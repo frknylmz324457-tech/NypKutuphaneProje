@@ -45,5 +45,5 @@ Bu proje **Katmanlı Mimari (Layered Architecture)** prensiplerine sadık kalın
 ---
 
 ## 📽️ Tanıtım videosu: 
-https://www.youtube.com/watch?v=ZvXcAUkqth0
+https://youtu.be/gcHwk4dER3g
 
