@@ -18,22 +18,50 @@ namespace KutuphaneYonetimSistemi1
         public MainForm(string rol)
         {
             InitializeComponent();
-            gelenRol = rol;
-
-            if (gelenRol.ToLower() != "admin")
-            {
-                this.Text = "Kütüphane Sistemi - Hoşgeldin " + gelenRol;
-
-                menuStrip1.Items[0].Visible = false;
-                menuStrip1.Items[1].Visible = false;
-                menuRapor.Visible = false;
-            }
         }
+
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            string role = Program.CurrentUserRole;
 
+
+            menuKitap.Visible = false;
+            menuUye.Visible = false;
+            menuRapor.Visible = false;
+            ödünçİşlemleriToolStripMenuItem.Visible = false;
+            taleplerToolStripMenuItem.Visible = false;
+            label1.Text = "Hoşgeldin " + role + " Furkan ";
+            if (role == "Staff")
+            {
+  
+                menuUye.Visible = true;
+                ödünçİşlemleriToolStripMenuItem.Visible = true;
+                taleplerToolStripMenuItem.Visible = true;
+
+            }
+            else if (role == "Admin")
+            {
+                menuKitap.Visible = true;
+                menuUye.Visible = true;
+                menuRapor.Visible = true;
+                ödünçİşlemleriToolStripMenuItem.Visible = true;
+                taleplerToolStripMenuItem.Visible = true;
+            }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void kitapİşlemleriToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -73,6 +101,16 @@ namespace KutuphaneYonetimSistemi1
         {
             TalepForm talepEkrani = new TalepForm();
             talepEkrani.ShowDialog();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

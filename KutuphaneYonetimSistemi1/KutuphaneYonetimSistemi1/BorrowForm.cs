@@ -14,11 +14,11 @@ namespace KutuphaneYonetimSistemi1
 
         BorrowManager bm = new BorrowManager();
         BookManager bookMngr = new BookManager();
-        BorrowManager borrowMngr = new BorrowManager();
+
 
         private void BorrowForm_Load(object sender, EventArgs e)
-        { 
-            if (Program.CurrentUserRole == "admin")
+        {
+            if (Program.CurrentUserRole == "Admin" || Program.CurrentUserRole == "Staff")
             {
                 txtMemberId.Visible = true;
                 if (label1 != null) label1.Visible = true;
@@ -39,10 +39,7 @@ namespace KutuphaneYonetimSistemi1
             dgvBorrows.Columns[3].HeaderText = "Kalan Stok";
         }
 
-        void Listele()
-        {
-            dgvBorrows.DataSource = bm.GetMemberBorrows(Program.CurrentUserId);
-        }
+
 
         private void btnLend_Click(object sender, EventArgs e)
         {
@@ -55,36 +52,46 @@ namespace KutuphaneYonetimSistemi1
             int bookId = Convert.ToInt32(dgvBorrows.SelectedRows[0].Cells["id"].Value);
             int memberId = 0;
 
-            // Admin ise kutudan al, değilse kendisi
-            bool adminMi = false;
-            if (Program.CurrentUserRole != null) adminMi = Program.CurrentUserRole.ToLower().Contains("admin");
+            bool adminMi = Program.CurrentUserRole == "Admin";
+            bool staffMi = Program.CurrentUserRole == "Staff";
+            bool memberMi = Program.CurrentUserRole == "Member";
 
-            if (adminMi)
+            if (memberMi)
             {
+                memberId = Program.CurrentMemberId;
+
+                if (memberId <= 0)
+                {
+                    MessageBox.Show("Üye bilgisi bulunamadı!");
+                    return;
+                }
+            }
+            else
+            {
+                
                 if (string.IsNullOrEmpty(txtMemberId.Text) || !int.TryParse(txtMemberId.Text, out memberId))
                 {
                     MessageBox.Show("Lütfen geçerli bir Üye ID girin.");
                     return;
                 }
             }
-            else
-            {
-                memberId = Program.CurrentUserId;
-            }
 
-            // --- KRİTİK NOKTA ---
-            // Artık bm.BorrowBook bize "true" veya "false" döndürüyor.
-            // Sadece "true" dönerse listeyi yeniliyoruz.
-            bool sonuc = bm.BorrowBook(memberId, bookId);
+            Borrow b = new Borrow();
+            b.MemberId = memberId;
+            b.BookId = bookId;
 
-            if (sonuc == true)
+            try
             {
+                bm.LendBook(b);
                 MessageBox.Show("Kitap başarıyla verildi, iyi okumalar!");
-                ModuGuncelle(); // Listeyi yenile
+                ModuGuncelle();
             }
-            // Hata varsa zaten BorrowBook içindeki "catch" bloğunda mesaj çıkacak
-            // Ve stok düşmeyecek.
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
         }
+
 
 
         private void btnReturn_Click(object sender, EventArgs e)
@@ -94,9 +101,10 @@ namespace KutuphaneYonetimSistemi1
                 int islemId = Convert.ToInt32(dgvBorrows.SelectedRows[0].Cells["id"].Value);
                 int kitapId = Convert.ToInt32(dgvBorrows.SelectedRows[0].Cells["book_id"].Value);
 
-                borrowMngr.ReceiveBook(islemId, kitapId);
+                bm.ReceiveBook(islemId, kitapId);
                 MessageBox.Show("Kitap iade alındı, stok güncellendi! ✅");
-                dgvBorrows.DataSource = borrowMngr.GetActiveBorrows();
+                dgvBorrows.DataSource = bm.GetActiveBorrows();
+
             }
             else
             {
@@ -111,37 +119,30 @@ namespace KutuphaneYonetimSistemi1
 
         void ModuGuncelle()
         {
-            // ==========================================
-            // 1. VERİLERİ GETİRME
-            // ==========================================
+
             if (chkIadeModu.Checked)
             {
-                // İADE MODU
-                // Rol boşsa bile hata vermemesi için güvenli kontrol
-                if (Program.CurrentUserRole == "admin")
-                    dgvBorrows.DataSource = bm.GetAllBorrows();
+                if (Program.CurrentUserRole == "Admin" || Program.CurrentUserRole == "Staff")
+                {
+                    dgvBorrows.DataSource = bm.GetPendingReturns(); 
+                }
                 else
-                    // Eğer ID yoksa 0 gönderip boş liste çeksin, hata patlamasın
-                    dgvBorrows.DataSource = bm.GetMemberBorrows(Program.CurrentUserId > 0 ? Program.CurrentUserId : 0);
-
-                if (dgvBorrows.Columns["is_returned"] != null)
-                    dgvBorrows.Columns["is_returned"].Visible = false;
+                {
+                    dgvBorrows.DataSource = bm.GetMemberBorrows(Program.CurrentMemberId);
+                }
 
                 btnLend.Enabled = false;
                 btnReturn.Enabled = true;
             }
+
             else
             {
-                // KİTAP ALMA MODU
                 dgvBorrows.DataSource = bookMngr.GetBooksForBorrowing();
 
                 btnLend.Enabled = true;
                 btnReturn.Enabled = false;
             }
 
-            // ==========================================
-            // 2. BAŞLIKLARI DÜZELTME
-            // ==========================================
             if (dgvBorrows.Columns["title"] != null) dgvBorrows.Columns["title"].HeaderText = "Kitap Adı";
             if (dgvBorrows.Columns["author"] != null) dgvBorrows.Columns["author"].HeaderText = "Yazar";
             if (dgvBorrows.Columns["stock"] != null) dgvBorrows.Columns["stock"].HeaderText = "Stok";
@@ -152,27 +153,17 @@ namespace KutuphaneYonetimSistemi1
             if (dgvBorrows.Columns["borrow_date"] != null) dgvBorrows.Columns["borrow_date"].HeaderText = "Alış Tarihi";
             if (dgvBorrows.Columns["first_name"] != null) dgvBorrows.Columns["first_name"].HeaderText = "Üye Adı";
 
-            // ==========================================
-            // 3. KUTUYU GÖSTERME (ZORLA AÇIYORUZ)
-            // ==========================================
-
-            // Normalde burası Program.CurrentUserRole == "admin" olmalıydı.
-            // Ama senin rol değişkenin boş olduğu için şimdilik manuel "true" yapıyorum.
             bool adminMi = true;
 
-            // ID Sütunlarını Göster
             if (dgvBorrows.Columns["id"] != null) dgvBorrows.Columns["id"].Visible = adminMi;
             if (dgvBorrows.Columns["book_id"] != null) dgvBorrows.Columns["book_id"].Visible = adminMi;
             if (dgvBorrows.Columns["member_id"] != null) dgvBorrows.Columns["member_id"].Visible = adminMi;
 
-            // --- ID KUTUSU AYARI ---
-            // Eğer Testlim Etmediğim Kitaplar (İade Modu) seçili DEĞİLSE kutuyu göster
             if (chkIadeModu.Checked == false)
             {
                 txtMemberId.Visible = true;
                 if (label1 != null) label1.Visible = true;
 
-                // Öne getir
                 txtMemberId.BringToFront();
                 if (label1 != null) label1.BringToFront();
             }
@@ -183,5 +174,51 @@ namespace KutuphaneYonetimSistemi1
             }
         }
 
+
+
+        private void BorrowForm_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string aranacak = txtSearch.Text.Trim();
+
+            if (chkIadeModu.Checked)
+            {
+               
+                return;
+            }
+
+            if (string.IsNullOrEmpty(aranacak))
+            {
+              
+                dgvBorrows.DataSource = bookMngr.GetBooksForBorrowing();
+            }
+            else
+            {
+                
+                dgvBorrows.DataSource = bookMngr.SearchBooksForBorrowing(aranacak);
+            }
+        }
+        private void btnIadeBekleyenler_Click(object sender, EventArgs e)
+        {
+            dgvBorrows.DataSource = bm.GetPendingReturns();
+
+            if (dgvBorrows.Columns["Uye"] != null)
+                dgvBorrows.Columns["Uye"].HeaderText = "Üye";
+
+            if (dgvBorrows.Columns["Kitap"] != null)
+                dgvBorrows.Columns["Kitap"].HeaderText = "Kitap Adı";
+
+            if (dgvBorrows.Columns["AlisTarihi"] != null)
+                dgvBorrows.Columns["AlisTarihi"].HeaderText = "Alış Tarihi";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

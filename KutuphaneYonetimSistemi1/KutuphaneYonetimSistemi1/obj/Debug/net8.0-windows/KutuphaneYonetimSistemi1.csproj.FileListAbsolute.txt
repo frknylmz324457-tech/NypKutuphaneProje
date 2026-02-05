@@ -36,3 +36,44 @@ C:\Users\frkny\OneDrive\Masaüstü\Nesne Yönelim Programlama Dersi\KutuphaneYon
 C:\Users\frkny\OneDrive\Masaüstü\Nesne Yönelim Programlama Dersi\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.ReportForm.resources
 C:\Users\frkny\OneDrive\Masaüstü\Nesne Yönelim Programlama Dersi\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.UserDashboard.resources
 C:\Users\frkny\OneDrive\Masaüstü\Nesne Yönelim Programlama Dersi\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.TalepForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\KutuphaneYonetimSistemi1.exe
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\KutuphaneYonetimSistemi1.deps.json
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\KutuphaneYonetimSistemi1.runtimeconfig.json
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\KutuphaneYonetimSistemi1.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\KutuphaneYonetimSistemi1.pdb
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\Google.Protobuf.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\K4os.Compression.LZ4.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\K4os.Compression.LZ4.Streams.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\K4os.Hash.xxHash.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\MySql.Data.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\ZstdSharp.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\runtimes\win-x64\native\comerr64.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\runtimes\win-x64\native\gssapi64.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\runtimes\win-x64\native\krb5_64.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\bin\Debug\net8.0-windows\runtimes\win-x64\native\krbcc64.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.csproj.AssemblyReference.cache
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.BookForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.BorrowForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.LoginForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.MainForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.MemberForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.ReportForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.TalepForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.UserDashboard.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.csproj.GenerateResource.cache
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.AssemblyInfoInputs.cache
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.AssemblyInfo.cs
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.csproj.CoreCompileInputs.cache
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.sourcelink.json
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\Kutuphan.152EE201.Up2Date
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\refint\KutuphaneYonetimSistemi1.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.pdb
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.genruntimeconfig.cache
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\ref\KutuphaneYonetimSistemi1.dll
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.MyBooksForm.resources
+C:\Users\frkny\OneDrive\Belgeler\GitHub\NypKutuphaneProje\KutuphaneYonetimSistemi1\KutuphaneYonetimSistemi1\obj\Debug\net8.0-windows\KutuphaneYonetimSistemi1.Properties.Resources.resources

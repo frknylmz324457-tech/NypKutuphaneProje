@@ -1,36 +1,39 @@
-﻿using System;
-using System.Data;
-using KutuphaneYonetimSistemi1.DAL;
+﻿using KutuphaneYonetimSistemi1.DAL;
 using KutuphaneYonetimSistemi1.Entities;
 
 namespace KutuphaneYonetimSistemi1.BLL
 {
-   
     public class UserManager
     {
-        DbHelper db = new DbHelper();
+        private UserDal _userDal = new UserDal();
 
-        
-        public User Login(string username, string password)
+        public User? Login(string username, string password)
         {
-            string query = $"SELECT * FROM users WHERE username = '{username}' AND password = '{password}'";
-            DataTable dt = db.GetDataTable(query);
+            if (string.IsNullOrWhiteSpace(username))
+                throw new System.Exception("Kullanıcı adı boş olamaz!");
 
-            if (dt.Rows.Count > 0)
-            {
-                
-                User u = new User();
-                
-                u.Id = Convert.ToInt32(dt.Rows[0]["id"]);
-                u.Username = dt.Rows[0]["username"].ToString();
-                u.Role = dt.Rows[0]["role"].ToString();
-                return u;
-            }
-            else
-            {
+            if (string.IsNullOrWhiteSpace(password))
+                throw new System.Exception("Şifre boş olamaz!");
 
+            var dt = _userDal.GetByUsernameAndPassword(username, password);
+
+            if (dt.Rows.Count == 0)
                 return null;
-            }
+
+            var row = dt.Rows[0];
+
+            User u = new User();
+            u.Id = Convert.ToInt32(row["id"]);
+            u.Username = row["username"].ToString()!;
+            u.Role = row["role"].ToString()!;
+
+            if (row["member_id"] != DBNull.Value)
+                u.MemberId = Convert.ToInt32(row["member_id"]);
+            else
+                u.MemberId = null;
+
+            return u;
+
         }
     }
 }

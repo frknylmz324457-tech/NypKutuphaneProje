@@ -1,4 +1,4 @@
-namespace KutuphaneYonetimSistemi1
+ï»¿namespace KutuphaneYonetimSistemi1
 {
     public partial class LoginForm : Form
     {
@@ -13,26 +13,31 @@ namespace KutuphaneYonetimSistemi1
             string kadi = txtUsername.Text;
             string sifre = txtPassword.Text;
 
-            KutuphaneYonetimSistemi1.BLL.UserManager yonetici = new KutuphaneYonetimSistemi1.BLL.UserManager();
 
+            KutuphaneYonetimSistemi1.BLL.UserManager yonetici = new KutuphaneYonetimSistemi1.BLL.UserManager();
             var girisYapan = yonetici.Login(kadi, sifre);
 
             if (girisYapan != null)
             {
                 Program.CurrentUserRole = girisYapan.Role;
                 Program.CurrentUserId = girisYapan.Id;
-                MessageBox.Show("Giriþ Baþarýlý! Hoþgeldin ");
 
-                // Rol kontrolü yapýyoruz:
-                if (girisYapan.Role == "Admin")
+               
+                Program.CurrentMemberId = girisYapan.Id;
+
+                MessageBox.Show("GiriÅŸ BaÅŸarÄ±lÄ±! HoÅŸgeldin");
+
+
+
+
+                if (girisYapan.Role == "Admin" || girisYapan.Role == "Staff")
                 {
-                    // Yönetici ise Ana Yönetim Formunu aç
                     MainForm mf = new MainForm(girisYapan.Role);
                     mf.Show();
                 }
                 else
                 {
-                    // Üye ise (Furkan gibi) Kullanýcý Panelini aç
+                  
                     UserDashboard ud = new UserDashboard();
                     ud.Show();
                 }
@@ -41,11 +46,37 @@ namespace KutuphaneYonetimSistemi1
             }
             else
             {
-                MessageBox.Show("Kullanýcý adý veya þifre hatalý!");
+                MessageBox.Show("KullanÄ±cÄ± adÄ± veya ÅŸifre hatalÄ±!");
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
 
         }
 
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
+
+
 }

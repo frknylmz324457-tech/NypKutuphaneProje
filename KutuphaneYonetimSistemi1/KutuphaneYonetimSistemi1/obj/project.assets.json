@@ -600,11 +600,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\frkny\\OneDrive\\Masaüstü\\Nesne Yönelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj",
+      "projectUniqueName": "C:\\Users\\frkny\\OneDrive\\Belgeler\\GitHub\\NypKutuphaneProje\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj",
       "projectName": "KutuphaneYonetimSistemi1",
-      "projectPath": "C:\\Users\\frkny\\OneDrive\\Masaüstü\\Nesne Yönelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj",
+      "projectPath": "C:\\Users\\frkny\\OneDrive\\Belgeler\\GitHub\\NypKutuphaneProje\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1.csproj",
       "packagesPath": "C:\\Users\\frkny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\frkny\\OneDrive\\Masaüstü\\Nesne Yönelim Programlama Dersi\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\obj\\",
+      "outputPath": "C:\\Users\\frkny\\OneDrive\\Belgeler\\GitHub\\NypKutuphaneProje\\KutuphaneYonetimSistemi1\\KutuphaneYonetimSistemi1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -40,44 +40,50 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
-            txtId = new TextBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dgvMembers).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // txtFirstName
             // 
-            txtFirstName.Location = new Point(106, 41);
+            txtFirstName.Location = new Point(371, 42);
             txtFirstName.Name = "txtFirstName";
             txtFirstName.Size = new Size(200, 23);
             txtFirstName.TabIndex = 0;
             // 
             // txtLastName
             // 
-            txtLastName.Location = new Point(106, 70);
+            txtLastName.Location = new Point(371, 71);
             txtLastName.Name = "txtLastName";
             txtLastName.Size = new Size(200, 23);
             txtLastName.TabIndex = 1;
             // 
             // txtPhone
             // 
-            txtPhone.Location = new Point(106, 99);
+            txtPhone.Location = new Point(371, 100);
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(200, 23);
             txtPhone.TabIndex = 2;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(106, 128);
+            txtEmail.Location = new Point(371, 129);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(200, 23);
             txtEmail.TabIndex = 3;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(384, 55);
+            btnAdd.Location = new Point(624, 27);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(75, 23);
+            btnAdd.Size = new Size(92, 41);
             btnAdd.TabIndex = 4;
             btnAdd.Text = "Ekle";
             btnAdd.UseVisualStyleBackColor = true;
@@ -85,9 +91,9 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(384, 84);
+            btnUpdate.Location = new Point(624, 82);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(75, 23);
+            btnUpdate.Size = new Size(92, 41);
             btnUpdate.TabIndex = 5;
             btnUpdate.Text = "Güncelle";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -95,9 +101,9 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(384, 113);
+            btnDelete.Location = new Point(624, 141);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(75, 23);
+            btnDelete.Size = new Size(92, 41);
             btnDelete.TabIndex = 6;
             btnDelete.Text = "Sil";
             btnDelete.UseVisualStyleBackColor = true;
@@ -106,16 +112,16 @@
             // dgvMembers
             // 
             dgvMembers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMembers.Location = new Point(12, 288);
+            dgvMembers.Location = new Point(0, 209);
             dgvMembers.Name = "dgvMembers";
-            dgvMembers.Size = new Size(776, 150);
+            dgvMembers.Size = new Size(799, 241);
             dgvMembers.TabIndex = 7;
             dgvMembers.CellClick += dgvMembers_CellClick;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(51, 49);
+            label1.Location = new Point(338, 50);
             label1.Name = "label1";
             label1.Size = new Size(25, 15);
             label1.TabIndex = 8;
@@ -124,7 +130,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(51, 73);
+            label2.Location = new Point(321, 79);
             label2.Name = "label2";
             label2.Size = new Size(42, 15);
             label2.TabIndex = 9;
@@ -133,7 +139,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(51, 107);
+            label3.Location = new Point(314, 108);
             label3.Name = "label3";
             label3.Size = new Size(49, 15);
             label3.TabIndex = 10;
@@ -142,37 +148,61 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(51, 136);
+            label4.Location = new Point(313, 137);
             label4.Name = "label4";
-            label4.Size = new Size(47, 15);
+            label4.Size = new Size(50, 15);
             label4.TabIndex = 11;
-            label4.Text = "E-posta";
+            label4.Text = "E-posta:";
             // 
-            // label5
+            // pictureBox1
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(51, 160);
-            label5.Name = "label5";
-            label5.Size = new Size(20, 15);
-            label5.TabIndex = 14;
-            label5.Text = "Id:";
+            pictureBox1.Image = Properties.Resources.pngwing_com__5_;
+            pictureBox1.Location = new Point(0, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(169, 110);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 12;
+            pictureBox1.TabStop = false;
             // 
-            // txtId
+            // pictureBox2
             // 
-            txtId.BackColor = SystemColors.ControlLight;
-            txtId.Location = new Point(106, 157);
-            txtId.Name = "txtId";
-            txtId.ReadOnly = true;
-            txtId.Size = new Size(200, 23);
-            txtId.TabIndex = 13;
+            pictureBox2.Image = Properties.Resources.png_transparent_add_person_add_person_icon_thumbnail;
+            pictureBox2.Location = new Point(722, 31);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(56, 37);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 13;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.png_transparent_refresh_update_icon_reload_renew_refreshed_updated_thumbnail;
+            pictureBox3.Location = new Point(722, 89);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(56, 34);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 14;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.png_transparent_rubbish_bins_waste_paper_baskets_recycling_bin_computer_icons_trash_icon_white_recycling_logo_thumbnail;
+            pictureBox4.Location = new Point(713, 141);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(65, 41);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 15;
+            pictureBox4.TabStop = false;
             // 
             // MemberForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label5);
-            Controls.Add(txtId);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -189,6 +219,10 @@
             Text = "MemberForm";
             Load += MemberForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvMembers).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -207,7 +241,9 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
-        private TextBox txtId;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
     }
 }

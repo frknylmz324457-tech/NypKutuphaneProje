@@ -92,6 +92,12 @@ namespace KutuphaneYonetimSistemi1
 
         private void BookForm_Load(object sender, EventArgs e)
         {
+            if (Program.CurrentUserRole != "Admin")
+            {
+                MessageBox.Show("Bu ekrana erişim yetkiniz yok!");
+                this.Close();
+                return;
+            }
             KitaplariListele();
             dgvBooks.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }

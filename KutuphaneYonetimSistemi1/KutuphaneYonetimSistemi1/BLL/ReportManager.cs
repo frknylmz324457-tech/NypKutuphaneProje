@@ -1,52 +1,24 @@
-﻿using System;
-using System.Data;
-using MySql.Data.MySqlClient;
-using KutuphaneYonetimSistemi1.DAL; // DbHelper buradaysa
+﻿using KutuphaneYonetimSistemi1.DAL;
 
-public class ReportManager
+namespace KutuphaneYonetimSistemi1.BLL
 {
-    DbHelper db = new DbHelper();
-
-    // 1. LİSTE: İADE BEKLEYEN KİTAPLAR
-    public DataTable GetPendingReturns()
+    public class ReportManager
     {
-        string query = @"
-            SELECT 
-                b.id as 'Kitap ID',
-                b.title AS 'Kitap Adı', 
-                m.first_name AS 'Üye Adı', 
-                m.last_name AS 'Üye Soyadı', 
-                br.borrow_date AS 'Alış Tarihi'
-            FROM borrows br
-            JOIN books b ON br.book_id = b.id
-            JOIN members m ON br.member_id = m.id
-            WHERE br.is_returned = 0 
-            ORDER BY br.borrow_date ASC";
+        private ReportDal _reportDal = new ReportDal();
 
-        // DÜZELTİLEN YER: ExecuteQuery -> GetDataTable
-        return db.GetDataTable(query);
-    }
+        public int GetTotalBookCount()
+        {
+            return _reportDal.GetTotalBookCount();
+        }
 
-    // 2. LİSTE: TÜM HAREKET GEÇMİŞİ
-    public DataTable GetAllTransactionHistory()
-    {
-        string query = @"
-            SELECT 
-                br.id AS 'İşlem No',
-                b.title AS 'Kitap Adı',
-                m.first_name AS 'Üye Adı', 
-                m.last_name AS 'Üye Soyadı',
-                br.borrow_date AS 'Alış Tarihi',
-                CASE 
-                    WHEN br.is_returned = 1 THEN 'TESLİM EDİLDİ' 
-                    ELSE 'BEKLİYOR' 
-                END AS 'Durum'
-            FROM borrows br
-            JOIN books b ON br.book_id = b.id
-            JOIN members m ON br.member_id = m.id
-            ORDER BY br.borrow_date DESC";
+        public int GetPendingReturnCount()
+        {
+            return _reportDal.GetPendingReturnCount();
+        }
 
-        // DÜZELTİLEN YER: ExecuteQuery -> GetDataTable
-        return db.GetDataTable(query);
+        public int GetTotalMemberCount()
+        {
+            return _reportDal.GetTotalMemberCount();
+        }
     }
 }

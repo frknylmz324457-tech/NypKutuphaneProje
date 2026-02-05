@@ -1,14 +1,13 @@
 ﻿using System;
-using System.Data;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using KutuphaneYonetimSistemi1.DAL; // DbHelper buradaysa
+using KutuphaneYonetimSistemi1.BLL;
+using KutuphaneYonetimSistemi1.Entities;
 
 namespace KutuphaneYonetimSistemi1
 {
     public partial class MemberForm : Form
     {
-        DbHelper db = new DbHelper();
+        MemberManager memberManager = new MemberManager();
 
         public MemberForm()
         {
@@ -17,47 +16,36 @@ namespace KutuphaneYonetimSistemi1
 
         private void MemberForm_Load(object sender, EventArgs e)
         {
+            if (Program.CurrentUserRole != "Admin")
+            {
+                MessageBox.Show("Bu ekrana erişim yetkiniz yok!");
+                this.Close();
+                return;
+            }
             UyeleriListele();
         }
 
-        // Üyeleri dgvMembers tablosuna doldur
         void UyeleriListele()
         {
-            string query = "SELECT * FROM members";
-            dgvMembers.DataSource = db.GetDataTable(query);
-
-            // Tabloyu güzelleştir
-            if (dgvMembers.Columns.Count > 0)
-            {
-                dgvMembers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                dgvMembers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            }
+            dgvMembers.DataSource = memberManager.GetAllMembers();
+            dgvMembers.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvMembers.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
-        // Gridde bir satıra tıklayınca kutulara dolsun (TextBox isimlerini kontrol et!)
-        private void dgvMembers_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0) // Başlık satırına tıklanmadıysa
-            {
-                // TextBox isimlerin farklıysa buraları düzeltmen gerekir (txtAd, txtSoyad vs.)
-                // Örneğin: txtAd.Text = dgvMembers.Rows[e.RowIndex].Cells["first_name"].Value.ToString();
-
-                // Eğer TextBox isimlerini hatırlamıyorsan bu kısmı yorum satırı yapabilirsin.
-            }
-        }
-
-        // EKLE BUTONU
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            // TextBox isimlerini kendi formuna göre düzelt: txtAd, txtSoyad, txtEmail, txtTel
             try
             {
-                // Örnek: string ad = txtAd.Text;
-                // Şimdilik sadece metodun iskeletini veriyorum, formundaki textbox isimlerine göre doldurmalısın.
-                // string query = $"INSERT INTO members (first_name, last_name, email, phone) VALUES ('{txtAd.Text}', '{txtSoyad.Text}', '{txtEmail.Text}', '{txtTel.Text}')";
-                // db.ExecuteQuery(query); // veya db.GetDataTable(query);
+                Member m = new Member();
+                m.FirstName = txtFirstName.Text;
+                m.LastName = txtLastName.Text;
+                m.Phone = txtPhone.Text;
+                m.Email = txtEmail.Text;
+                m.RegisterDate = DateTime.Now;
 
-                MessageBox.Show("Üye Ekleme kodu için TextBox isimlerini kontrol etmelisin.");
+                memberManager.AddMember(m);
+
+                MessageBox.Show("Üye eklendi!");
                 UyeleriListele();
             }
             catch (Exception ex)
@@ -66,27 +54,76 @@ namespace KutuphaneYonetimSistemi1
             }
         }
 
-        // SİL BUTONU
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (dgvMembers.SelectedRows.Count > 0)
+            if (dgvMembers.SelectedRows.Count == 0)
             {
-                int id = Convert.ToInt32(dgvMembers.SelectedRows[0].Cells["id"].Value);
-                string query = "DELETE FROM members WHERE id = " + id;
-                db.GetDataTable(query); // Silme işlemi
+                MessageBox.Show("Lütfen güncellenecek üyeyi seçin!");
+                return;
+            }
 
-                MessageBox.Show("Üye silindi.");
+            try
+            {
+                Member m = new Member();
+                m.Id = Convert.ToInt32(dgvMembers.SelectedRows[0].Cells["id"].Value);
+                m.FirstName = txtFirstName.Text;
+                m.LastName = txtLastName.Text;
+                m.Phone = txtPhone.Text;
+                m.Email = txtEmail.Text;
+
+                memberManager.UpdateMember(m);
+
+                MessageBox.Show("Üye güncellendi!");
                 UyeleriListele();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Lütfen silinecek üyeyi seçin.");
+                MessageBox.Show("Hata: " + ex.Message);
             }
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        { 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dgvMembers.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Lütfen silinecek üyeyi seçin!");
+                return;
+            }
 
+            int id = Convert.ToInt32(dgvMembers.SelectedRows[0].Cells["id"].Value);
+
+            DialogResult cevap = MessageBox.Show(
+                "Bu üyeyi silmek istediğinize emin misiniz?",
+                "Silme Onayı",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (cevap == DialogResult.Yes)
+            {
+                try
+                {
+                    memberManager.DeleteMember(id);
+                    MessageBox.Show("Üye silindi!");
+                    UyeleriListele();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Hata: " + ex.Message);
+                }
+            }
+        }
+
+        private void dgvMembers_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            DataGridViewRow row = dgvMembers.Rows[e.RowIndex];
+
+            txtFirstName.Text = row.Cells["first_name"].Value.ToString();
+            txtLastName.Text = row.Cells["last_name"].Value.ToString();
+            txtPhone.Text = row.Cells["phone"].Value.ToString();
+            txtEmail.Text = row.Cells["email"].Value.ToString();
         }
     }
 }

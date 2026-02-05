@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using KutuphaneYonetimSistemi1.DAL;
 using KutuphaneYonetimSistemi1.Entities;
 
@@ -7,54 +6,52 @@ namespace KutuphaneYonetimSistemi1.BLL
 {
     public class BookManager
     {
-        DbHelper db = new DbHelper();
+        private BookDal _bookDal = new BookDal();
+
         public void AddBook(Book b)
         {
-            string query = $"INSERT INTO books (isbn, title, author, publisher, page_count, year, stock, is_available) " +
-                           $"VALUES ('{b.ISBN}', '{b.Title}', '{b.Author}', '{b.Publisher}', {b.PageCount}, {b.Year}, {b.Stock}, 1)";
+           
+            if (b.Stock < 0)
+                throw new System.Exception("Stok 0'dan küçük olamaz!");
 
-            db.ExecuteQuery(query);
+            if (string.IsNullOrWhiteSpace(b.Title))
+                throw new System.Exception("Kitap adı boş olamaz!");
+
+          
+            _bookDal.Add(b);
         }
-        public DataTable GetAllBooks()
-        {
-            return db.GetDataTable("SELECT * FROM books");
-        }
+
         public void UpdateBook(Book b)
         {
-            string query = $"UPDATE books SET " +
-                           $"isbn='{b.ISBN}', " +
-                           $"title='{b.Title}', " +
-                           $"author='{b.Author}', " +
-                           $"publisher='{b.Publisher}', " +
-                           $"page_count={b.PageCount}, " +
-                           $"year={b.Year}, " +
-                           $"stock={b.Stock} " +
-                           $"WHERE id={b.Id}";
+            if (b.Id <= 0)
+                throw new System.Exception("Geçersiz kitap ID!");
 
-            db.ExecuteQuery(query);
+            _bookDal.Update(b);
         }
 
         public void DeleteBook(int id)
         {
-            string query = $"DELETE FROM books WHERE id={id}";
-            db.ExecuteQuery(query);
+            if (id <= 0)
+                throw new System.Exception("Geçersiz kitap ID!");
+
+            _bookDal.Delete(id);
         }
+
+        public DataTable GetAllBooks()
+        {
+            return _bookDal.GetAll();
+        }
+
         public DataTable GetBooksForBorrowing()
         {
-            string query = @"
-        SELECT 
-            id, 
-            isbn, 
-            title, 
-            author, 
-            publisher, 
-            year, 
-            page_count, 
-            stock 
-        FROM books 
-        WHERE stock > 0 AND is_available = 1";
-
-            return db.GetDataTable(query);
+            return _bookDal.GetBooksForBorrowing();
         }
+
+        public DataTable SearchBooksForBorrowing(string keyword)
+        {
+            return _bookDal.SearchBooksForBorrowing(keyword);
+        }
+
+
     }
 }

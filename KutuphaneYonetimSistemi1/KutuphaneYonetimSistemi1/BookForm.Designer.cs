@@ -42,13 +42,12 @@
             txtYear = new TextBox();
             label7 = new Label();
             label8 = new Label();
-            label6 = new Label();
             txtPageCount = new TextBox();
-            txtId = new TextBox();
             txtAuthor = new TextBox();
             txtPublisher = new TextBox();
             txtTitle = new TextBox();
             txtISBN = new TextBox();
+            txtId = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvBooks).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -57,9 +56,9 @@
             // 
             dgvBooks.AllowUserToAddRows = false;
             dgvBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvBooks.Location = new Point(12, 360);
+            dgvBooks.Location = new Point(0, 332);
             dgvBooks.Name = "dgvBooks";
-            dgvBooks.Size = new Size(1025, 175);
+            dgvBooks.Size = new Size(1049, 216);
             dgvBooks.TabIndex = 0;
             dgvBooks.CellClick += dgvBooks_CellClick;
             // 
@@ -111,32 +110,35 @@
             // 
             // btnAdd
             // 
+            btnAdd.BackColor = Color.FromArgb(0, 192, 0);
             btnAdd.Location = new Point(222, 21);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(90, 34);
             btnAdd.TabIndex = 6;
             btnAdd.Text = "Ekle";
-            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.UseVisualStyleBackColor = false;
             btnAdd.Click += btnAdd_Click;
             // 
             // btnDelete
             // 
+            btnDelete.BackColor = Color.DarkRed;
             btnDelete.Location = new Point(222, 101);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(90, 34);
             btnDelete.TabIndex = 7;
             btnDelete.Text = "Sil";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // btnUpdate
             // 
+            btnUpdate.BackColor = SystemColors.HotTrack;
             btnUpdate.Location = new Point(222, 61);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(90, 34);
             btnUpdate.TabIndex = 8;
             btnUpdate.Text = "Güncelle";
-            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.UseVisualStyleBackColor = false;
             btnUpdate.Click += btnUpdate_Click;
             // 
             // groupBox1
@@ -145,9 +147,7 @@
             groupBox1.Controls.Add(txtYear);
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(txtPageCount);
-            groupBox1.Controls.Add(txtId);
             groupBox1.Controls.Add(txtAuthor);
             groupBox1.Controls.Add(txtPublisher);
             groupBox1.Controls.Add(txtTitle);
@@ -159,7 +159,7 @@
             groupBox1.Controls.Add(label5);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(194, 342);
+            groupBox1.Size = new Size(194, 314);
             groupBox1.TabIndex = 9;
             groupBox1.TabStop = false;
             groupBox1.Text = "Kitap Bilgileri";
@@ -196,30 +196,12 @@
             label8.TabIndex = 11;
             label8.Text = "Stok:";
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(6, 313);
-            label6.Name = "label6";
-            label6.Size = new Size(20, 15);
-            label6.TabIndex = 10;
-            label6.Text = "Id:";
-            // 
             // txtPageCount
             // 
             txtPageCount.Location = new Point(82, 206);
             txtPageCount.Name = "txtPageCount";
             txtPageCount.Size = new Size(100, 23);
             txtPageCount.TabIndex = 9;
-            // 
-            // txtId
-            // 
-            txtId.Enabled = false;
-            txtId.Location = new Point(82, 313);
-            txtId.Name = "txtId";
-            txtId.ReadOnly = true;
-            txtId.Size = new Size(100, 23);
-            txtId.TabIndex = 11;
             // 
             // txtAuthor
             // 
@@ -251,6 +233,15 @@
             txtISBN.TabIndex = 6;
             txtISBN.TextChanged += txtISBN_TextChanged;
             // 
+            // txtId
+            // 
+            txtId.Enabled = false;
+            txtId.Location = new Point(918, 498);
+            txtId.Name = "txtId";
+            txtId.ReadOnly = true;
+            txtId.Size = new Size(100, 23);
+            txtId.TabIndex = 11;
+            // 
             // BookForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -261,6 +252,7 @@
             Controls.Add(btnDelete);
             Controls.Add(btnAdd);
             Controls.Add(dgvBooks);
+            Controls.Add(txtId);
             Name = "BookForm";
             Text = "BookForm";
             Load += BookForm_Load;
@@ -268,6 +260,7 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -287,7 +280,6 @@
         private TextBox txtAuthor;
         private TextBox txtPageCount;
         private TextBox txtPublisher;
-        private Label label6;
         private TextBox txtId;
         private TextBox txtStock;
         private TextBox txtYear;

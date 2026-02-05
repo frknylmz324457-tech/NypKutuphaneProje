@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data;
+﻿using System.Data;
 using KutuphaneYonetimSistemi1.DAL;
 using KutuphaneYonetimSistemi1.Entities;
 
@@ -7,39 +6,38 @@ namespace KutuphaneYonetimSistemi1.BLL
 {
     public class MemberManager
     {
-        DbHelper db = new DbHelper();
-
-        public DataTable GetAllMembers()
-        {
-            return db.GetDataTable("SELECT * FROM members");
-        }
+        private MemberDal _memberDal = new MemberDal();
 
         public void AddMember(Member m)
         {
-            string tarih = m.RegisterDate.ToString("yyyy-MM-dd HH:mm:ss");
+            if (string.IsNullOrWhiteSpace(m.FirstName))
+                throw new System.Exception("Üye adı boş olamaz!");
 
-            string query = $"INSERT INTO members (first_name, last_name, phone, email, registration_date) " +
-                           $"VALUES ('{m.FirstName}', '{m.LastName}', '{m.Phone}', '{m.Email}', '{tarih}')";
+            if (string.IsNullOrWhiteSpace(m.LastName))
+                throw new System.Exception("Üye soyadı boş olamaz!");
 
-            db.ExecuteQuery(query);
+            _memberDal.Add(m);
         }
 
         public void UpdateMember(Member m)
         {
-            string query = $"UPDATE members SET " +
-                           $"first_name='{m.FirstName}', " +
-                           $"last_name='{m.LastName}', " +
-                           $"phone='{m.Phone}', " +
-                           $"email='{m.Email}' " +
-                           $"WHERE id={m.Id}";
+            if (m.Id <= 0)
+                throw new System.Exception("Geçersiz üye ID!");
 
-            db.ExecuteQuery(query);
+            _memberDal.Update(m);
         }
 
         public void DeleteMember(int id)
         {
-            string query = $"DELETE FROM members WHERE id={id}";
-            db.ExecuteQuery(query);
+            if (id <= 0)
+                throw new System.Exception("Geçersiz üye ID!");
+
+            _memberDal.Delete(id);
+        }
+
+        public DataTable GetAllMembers()
+        {
+            return _memberDal.GetAll();
         }
     }
 }

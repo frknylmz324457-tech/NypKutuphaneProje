@@ -1,48 +1,41 @@
 ﻿using System;
 using System.Windows.Forms;
-// ReportManager neredeyse orayı ekle (BLL veya aynı yer)
-// using KutuphaneYonetimSistemi1.BLL; 
+using KutuphaneYonetimSistemi1.BLL;
 
 namespace KutuphaneYonetimSistemi1
 {
     public partial class ReportForm : Form
     {
-        ReportManager rm = new ReportManager();
+        BorrowManager bm = new BorrowManager();
 
         public ReportForm()
         {
             InitializeComponent();
+            this.Load += ReportForm_Load;
         }
 
-        // Form Yüklenince (Otomatik Çalışır)
         private void ReportForm_Load(object sender, EventArgs e)
         {
-            // İlk açılışta bekleyenleri göstersin
-            dgvRapor.DataSource = rm.GetPendingReturns();
-            TabloyuSusle();
+            ReportManager rm = new ReportManager();
+
+            labelToplamKitap.Text = "Toplam Kitap: " + rm.GetTotalBookCount();
+            labelIadeBekleyen.Text = "İade Bekleyen: " + rm.GetPendingReturnCount();
+            labelToplamUye.Text = "Toplam Üye: " + rm.GetTotalMemberCount();
         }
 
-        // BUTON 1: İADE BEKLEYENLER
+
         private void button1_Click(object sender, EventArgs e)
         {
-            dgvRapor.DataSource = rm.GetPendingReturns();
+            dgvRapor.DataSource = bm.GetActiveBorrows();
             TabloyuSusle();
         }
 
-        // BUTON 2: TÜM GEÇMİŞ
         private void button2_Click(object sender, EventArgs e)
         {
-            dgvRapor.DataSource = rm.GetAllTransactionHistory();
+            dgvRapor.DataSource = bm.GetAllBorrows();
             TabloyuSusle();
         }
 
-        // BUTON 3: (Boşta ise şimdilik bir şey yapmasın veya çıkış olsun)
-        private void button3_Click(object sender, EventArgs e)
-        {
-            // İstersen buraya Close(); yazarak kapatma butonu yapabilirsin.
-        }
-
-        // Tabloyu Güzelleştirme Metodu
         void TabloyuSusle()
         {
             if (dgvRapor.Columns.Count > 0)
@@ -51,6 +44,11 @@ namespace KutuphaneYonetimSistemi1
                 dgvRapor.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 dgvRapor.RowHeadersVisible = false;
             }
+        }
+
+        private void labelToplamKitap_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
